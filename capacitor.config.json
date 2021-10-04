@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Beerus_Pub",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

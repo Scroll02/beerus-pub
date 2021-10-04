@@ -1,0 +1,7 @@
+{
+  "name": "Beerus_Pub",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
