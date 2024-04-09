@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'PixelColeco-4vJW';
+    src: url('../../../assets/font/PixelColeco-4vJW.ttf');
+  }
+
+  ion-content{
+    font-family: 'PixelColeco-4vJW';
+    --background: linear-gradient(#13132b,#40053e);
+  }
+  
+  ion-header{
+    --ion-toolbar-background: #121212;
+  }
+  
+  ion-title{
+    font-family: 'PixelColeco-4vJW';
+    font-size:25px;
+    color:white;
+  }
+  .menuBtn{
+    color:white;
+}
+  ion-card{
+    font-family: 'PixelColeco-4vJW';
+    background-color: #32325b;
+    color:white;
+    border-radius: 20px;
+    width:370px;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 48%;
+    position: fixed;
+    h2{
+      font-size:20px;
+    }
+    ion-item{
+      --ion-item-background: #32325b;
+      color:white;
+
+      ion-label{
+        font-family: 'PixelColeco-4vJW';
+        font-size:20px;
+      }
+      ion-input{
+        font-family: 'PixelColeco-4vJW';
+      }
+      ion-textarea{
+        font-family: 'PixelColeco-4vJW';
+      } 
+    }
+  }
+
+  ion-grid{
+    margin-top: 30px;
+    margin-left:60px;
+    ion-icon{
+      font-size:46px;
+    }
+  }

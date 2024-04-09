@@ -1,7 +1,8 @@
 {
   "name": "Beerus_Pub",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

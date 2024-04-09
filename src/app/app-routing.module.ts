@@ -8,8 +8,32 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'product',
     pathMatch: 'full'
+  },
+  {
+    path: 'product',
+    loadChildren: () => import('./pages/product/product.module').then( m => m.ProductPageModule)
+  },
+  {
+    path: 'order-cart',
+    loadChildren: () => import('./pages/order-cart/order-cart.module').then( m => m.OrderCartPageModule)
+  },
+  {
+    path: 'company-history',
+    loadChildren: () => import('./pages/company-history/company-history.module').then( m => m.CompanyHistoryPageModule)
+  },
+  {
+    path: 'about-the-app',
+    loadChildren: () => import('./pages/about-the-app/about-the-app.module').then( m => m.AboutTheAppPageModule)
+  },
+  {
+    path: 'developers',
+    loadChildren: () => import('./pages/developers/developers.module').then( m => m.DevelopersPageModule)
+  },
+  {
+    path: 'contact-us',
+    loadChildren: () => import('./pages/contact-us/contact-us.module').then( m => m.ContactUsPageModule)
   },
 ];
 

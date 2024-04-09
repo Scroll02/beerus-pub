@@ -1,3 +1,60 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu" contentId="main">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <img src="../assets/img/avatar.png" alt="">
+        <ion-label>
+          <h2>Sung Jinwoo</h2>
+          <p>09090909090909</p>
+        </ion-label>
+      </div>
+
+      <ion-list class="menu-items" lines="none">
+        <ion-menu-toggle>
+          <ion-item routerLink="/company-history" routerLinkActive="selected">
+            <ion-icon name="newspaper-outline"></ion-icon>
+            <ion-label><b>Company History</b></ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item routerLink="/product" routerLinkActive="selected">
+            <ion-icon name="beer-outline"></ion-icon> 
+            <ion-label><b>Product</b></ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        
+        <ion-menu-toggle>
+          <ion-item routerLink="/order-cart" routerLinkActive="selected">
+            <ion-icon name="cart-outline"></ion-icon> 
+            <ion-label><b>Order Cart</b></ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        
+        <ion-menu-toggle>
+          <ion-item routerLink="/about-the-app" routerLinkActive="selected">
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <ion-label><b>About the app</b></ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+       
+        <ion-menu-toggle>
+          <ion-item routerLink="/developers" routerLinkActive="selected">
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <ion-label><b>Developers</b></ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item routerLink="/contact-us" routerLinkActive="selected">
+            <ion-icon name="call-outline"></ion-icon>
+            <ion-label><b>Contact Us</b></ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+       
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

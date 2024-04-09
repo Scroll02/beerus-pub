@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'PixelColeco-4vJW';
+    src: url('../../../assets/font/PixelColeco-4vJW.ttf');
+  }
+
+  ion-content{
+    font-family: 'PixelColeco-4vJW';
+    --background: linear-gradient(#13132b,#40053e);
+  }
+  
+  ion-header{
+    --ion-toolbar-background: #121212;
+  }
+  
+  ion-title{
+    font-family: 'PixelColeco-4vJW';
+    font-size:25px;
+    color:white;
+  }
+  .menuBtn{
+    color:white;
+  }
+
+  ion-card{
+    margin-bottom: 20px;
+    background: #32325b;
+    text-align: center;
+    border-radius: 20px;
+    img{
+      height:200px;
+      width:250px;
+    }
+    ion-label{
+      font-family: 'PixelColeco-4vJW';
+      text-align:center;
+      font-size:17px;
+      color:white;
+    }
+  }
+ 

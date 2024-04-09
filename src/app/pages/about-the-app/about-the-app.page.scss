@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'PixelColeco-4vJW';
+    src: url('../../../assets/font/PixelColeco-4vJW.ttf');
+  }
+
+  ion-content{
+    font-family: 'PixelColeco-4vJW';
+    --background: linear-gradient(#13132b,#40053e);
+  }
+  
+  ion-header{
+    --ion-toolbar-background:#121212;
+  }
+  
+  ion-title{
+    font-family: 'PixelColeco-4vJW';
+    font-size:25px;
+    color:white;
+  }
+  .menuBtn{
+    color:white;
+}
+//Slides Animation Section
+#slides{
+  transform: translate3d(0,-10px,0);
+  width: 100%;
+  height: 130px;
+  box-shadow: none;
+  border-radius: 20px;
+
+  img{
+    object-fit: cover;
+    width: 100%;
+    transform: scale(1.1, 1.1) rotate(1deg);
+    transition: 600ms all ease-in-out;
+  }
+
+  p{
+    -webkit-text-stroke:2px black;
+    color: white;
+    font-weight: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:20px;
+  }
+}
+
+.swiper-slide-active{
+  transform: scale(1.05, 1.05);
+
+  ion-card{
+    img{
+      transform: scale(1,1);
+    }
+  }
+}
+.swiper-slide {
+  transition: 400ms all ease-in-out;
+}
+
+ion-card{
+  font-family: 'PixelColeco-4vJW';
+  background-color: #32325b;
+  text-align: justify;
+  color:white;
+  font-size:15px;
+  border-radius: 20px;
+
+  p{
+    text-indent: 10px;
+  }
+}
+
+.recommendation{
+  margin-left: 17px;
+  color:white;
+}

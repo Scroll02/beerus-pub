@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>About the app</ion-title>
+    <ion-buttons slot="start" class="menuBtn">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-slides [options]="option" class="ion-margin-top" id="slides">
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/img/slideShow/slideShow1.jpg" class="img-text">
+      </ion-card>
+    </ion-slide>
+   
+    <ion-slide>
+     <ion-card>
+       <img src="../../assets/img/slideShow/slideShow2.jpg">
+     </ion-card>
+   </ion-slide>
+   
+   <ion-slide>
+     <ion-card>
+       <img src="../../assets/img/slideShow/slideShow3.png">
+     </ion-card>
+   </ion-slide>
+   
+   <ion-slide>
+     <ion-card>
+       <img src="../../assets/img/slideShow/slideShow4.jpg">
+     </ion-card>
+   </ion-slide>
+  </ion-slides>
+
+  <ion-card>
+    <ion-card-content>
+        <p>BEERUS PUB is owned and operated by Christian Joel Banquito and Raven Rovic Reyes., a liqour delivery service that offers your favourite Beer, Ale and Hard Cider brands at liquor store prices!Beerus is a liquor delivery service accessible online via beerus app that allows you to order International and local premium Beer Brands and have it conveniently delivered to your home, office, or any address. <br><br></p>
+        <p>We closely monitor online pricing of other similar websites on an ongoing basis. While we exert best effort to maintain lowest online prices for specific products with the badge, we cannot guarantee that it will be updated real time. Due to the nature of online pricing that can change at any moment, our promise is that it is the lowest price online at the time of our last monitoring.</p>
+      </ion-card-content>
+  </ion-card>
+
+  <div class="recommendation">
+    <h2 style="text-align: center;">Featured/Recommendation</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+            <img src="../../assets/img/product/heineken1.png" style="height: 100px;">
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <img src="../../assets/img/product/corona1.png" style="height: 100px;">
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <img src="../../assets/img/product/budweiser1.png" style="height: 100px;">
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

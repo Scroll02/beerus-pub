@@ -1,20 +1,91 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Home</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-icon slot="end" name="notifications-outline"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-slides [options]="option" class="ion-margin-top" id="slides">
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/img/slideShow/slideShow1.jpg" class="img-text">
+      </ion-card>
+    </ion-slide>
+   
+    <ion-slide>
+     <ion-card>
+       <img src="../../assets/img/slideShow/slideShow2.jpg">
+     </ion-card>
+   </ion-slide>
+   
+   <ion-slide>
+     <ion-card>
+       <img src="../../assets/img/slideShow/slideShow3.png">
+     </ion-card>
+   </ion-slide>
+   
+   <ion-slide>
+     <ion-card>
+       <img src="../../assets/img/slideShow/slideShow4.jpg">
+     </ion-card>
+   </ion-slide>
+  </ion-slides>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="recommendation">
+    <h2>Featured/Recommendation</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+            <img src="../../assets/img/product/budlight.png" style="height: 100px;">
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <img src="../../assets/img/product/corona.png" style="height: 100px;">
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <img src="../../assets/img/product/heineken.png" style="height: 100px;">
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="aboutUs">
+    <h2>About Us</h2>
+    <p>BEERUS PUB is owned and operated by Christian Joel Banquito and Raven Rovic Reyes., a liqour delivery service that offers your favourite Beer, Ale and Hard Cider brands at liquor store prices!
+      <br><br>
+      For Questions Please email us at beerussam@tip.ph</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+            <img src="../../assets/img/aboutUs/Banquito.jpg">
+            <ion-label>Banquito, Christian Joel</ion-label><br>
+            <ion-label>Owners/Developers</ion-label>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <img src="../../assets/img/aboutUs/Reyes.jpg">
+            <ion-label>Reyes, Raven Rovic</ion-label><br>
+            <ion-label>Owner/Developers</ion-label>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
+
+<ion-footer class="bar-footer">
+  <ion-toolbar>
+   <ion-label>Drink Responsibly!!!</ion-label>
+  </ion-toolbar>
+</ion-footer>

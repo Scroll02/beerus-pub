@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'PixelColeco-4vJW';
+    src: url('../../../assets/font/PixelColeco-4vJW.ttf');
+}
+ion-content{
+    font-family: 'PixelColeco-4vJW';
+}
+ion-header{
+    --ion-toolbar-background:#121212;
+}
+ion-title{
+    font-family: 'PixelColeco-4vJW';
+    font-size:30px;
+    color:white;
+}
+.menuBtn{
+    color:white;
+}
+ion-card-title{
+    color:white;
+    font-size:20px;
+}
+ion-card{
+    background:#32325b;
+    font-family: 'PixelColeco-4vJW';
+
+    ion-card-header{
+        text-align: center;
+    }
+    p{
+        text-align: justify;
+        color:white;
+        font-size:13px;
+    }
+    img{
+        height:200px;
+        width: 300px;
+        margin:auto;
+    }
+}
+ion-label{
+    display: flex;
+    justify-content: center;
+    font-size:15px;
+    color:white;
+}
+h1{
+    font-size:25px;
+    color:white;
+}
+ion-button{
+    --background: #e6b908;
+    font-family: 'PixelColeco-4vJW';
+    width: 290px;
+    font-size:20px;
+}
+
+//Add to cart logo
+ion-badge {
+    color:white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 100%;
+}
+ion-icon{
+    color:white;
+}
+
+  
+

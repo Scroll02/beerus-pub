@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'PixelColeco-4vJW';
+    src: url('../assets/font/PixelColeco-4vJW.ttf');
+  }
+
+* {
+    font-family: 'PixelColeco-4vJW';
+}
+
+.menu-header-bg{
+    height: 210px;
+    width: 350px;
+    background: #121212;
+    background: linear-gradient( #13132b, #40053e);
+    box-shadow:0px 1px 10px rgba(98, 140, 255, 0.5);
+    color:white;
+}
+
+.header-content{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    color:white;
+
+    img{
+        width: 170px;
+        height: 120px;
+        border-radius: 50%;
+        border: 7px solid #5e7ccc;
+        margin-top: 15px;
+        margin-right: 14px;
+        margin-left:50px;
+    }
+    ion-label{
+        position:absolute;
+        top:150px;
+        margin-left:80px;
+        align-items: center;
+        color:white;
+    }
+}
+
+.menu-items{
+    background: #121212;
+    ion-icon{
+        margin-right: 20px;
+        color: #9b71ef;
+    }
+    ion-item{
+        --background: #121212;
+        margin-bottom: 30px;
+        font-size:20px;
+        color:white;
+    }
+    ion-item.selected{
+        border-left: 6px solid #e6b908;
+        ion-label{
+            color:#e6b908;
+        }
+        ion-icon{
+            color: #e6b908;
+        }
+    }
+    ion-item:hover{
+        transform: translate3d(15px,0,0);
+    }
+}
+
+

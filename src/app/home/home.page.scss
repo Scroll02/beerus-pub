@@ -1,27 +1,91 @@
-#container {
+@font-face {
+  font-family: 'PixelColeco-4vJW';
+  src: url('../../assets/font/PixelColeco-4vJW.ttf');
+}
+
+ion-content{
+  font-family: 'PixelColeco-4vJW';
+  --background: linear-gradient(#920aec,#32325b,#9b71ef);
+}
+
+ion-header{
+  background-color: black;
+}
+
+ion-title{
+  font-family: 'PixelColeco-4vJW';
+  font-size:30px;
+}
+ion-icon{
+  font-size:30px;
+  color: #9b71ef;
+  margin-right:15px;
+}
+//Slides Animation Section
+#slides{
+  transform: translate3d(0,-10px,0);
+  width: 100%;
+  height: 130px;
+  box-shadow: none;
+  border-radius: 20px;
+
+  img{
+    object-fit: cover;
+    width: 100%;
+    transform: scale(1.1, 1.1) rotate(1deg);
+    transition: 600ms all ease-in-out;
+  }
+
+  p{
+    -webkit-text-stroke:2px black;
+    color: white;
+    font-weight: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:20px;
+  }
+}
+
+.swiper-slide-active{
+  transform: scale(1.05, 1.05);
+
+  ion-card{
+    img{
+      transform: scale(1,1);
+    }
+  }
+}
+.swiper-slide {
+  transition: 400ms all ease-in-out;
+}
+
+//Featured/Recommendation Section
+.recommendation{
+  text-align: center;
+}
+
+//About Us Section
+.aboutUs{
   text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  p{
+    margin:15px;
+    text-align: justify
+  }
+}
+.aboutUs img{
+  border-radius: 20px;
+  height:150px;
+  width: 300px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+//Footer Section
+.bar-footer{
+  text-align: center;
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  ion-label{
+    font-family: 'PixelColeco-4vJW';
+  }
 }
